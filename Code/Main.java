@@ -28,7 +28,6 @@ public class Main {
         rows.add(new Row("Ford", "Focus", 100));
         rows.add(new Row("Volvo", "v60", 203));
         rows.add(new Row("Mercedes", "Maybach S 680", 612));
-        rows.add(new Row("Koenigsegg", "Blub", 1354));
 
         ArrayList<AggregatedRow> sortedList = sorter.sort(aggregator.aggregate(rows));
 
