@@ -1,16 +1,12 @@
-package Projektbericht.Implementierung;
+package Projektbericht.Code;
 
 import java.util.ArrayList;
 
 public class Aggregator {
 
-    public ArrayList<AggregatedRow> aggregatedRows;
-    
-    public Aggregator(){
-        this.aggregatedRows = new ArrayList<>();
-    }
-
     public ArrayList<AggregatedRow> aggregate (ArrayList<Row> rows){
+
+        ArrayList<AggregatedRow> aggregatedRows = new ArrayList<>();
 
         for (String brand : getBrands(rows)) {
             aggregatedRows.add(new AggregatedRow(brand, null, 0));

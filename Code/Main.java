@@ -1,4 +1,4 @@
-package Projektbericht.Implementierung; 
+package Projektbericht.Code;
 
 import java.util.ArrayList;
 
@@ -29,10 +29,6 @@ public class Main {
         rows.add(new Row("Volvo", "v60", 203));
         rows.add(new Row("Mercedes", "Maybach S 680", 612));
 
-        ArrayList<AggregatedRow> sortedList = sorter.sort(aggregator.aggregate(rows));
-
-        for(int i = 0; i < sortedList.size(); i++){
-            System.out.println(i + 1 + ". " + sortedList.get(i).brand + " " + sortedList.get(i).modell + " " + sortedList.get(i).hp +"hp");
-        }
+        sorter.sort(aggregator.aggregate(rows));
     }
 }
