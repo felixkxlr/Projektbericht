@@ -11,5 +11,4 @@ public class Row {
         this.modell = modell;
         this.hp = hp;
     }
-
 }
