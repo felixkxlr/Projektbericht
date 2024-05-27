@@ -14,6 +14,7 @@ public class Sorter {
     }
 
     private ArrayList<AggregatedRow> mergeSort(ArrayList<AggregatedRow> rows) {
+
         int length = rows.size();
         if (length < 2) {
             return rows;
@@ -31,6 +32,7 @@ public class Sorter {
     }
     
     private void merge(ArrayList<AggregatedRow> rows, ArrayList<AggregatedRow> leftSite, ArrayList<AggregatedRow> rightSide) {
+        
         int leftIndex = 0;
         int rightIndex = 0;
         int index = 0;

@@ -5,7 +5,6 @@ import java.util.ArrayList;
 public class Aggregator {
 
     public ArrayList<AggregatedRow> aggregate (ArrayList<Row> rows){
-
         ArrayList<AggregatedRow> aggregatedRows = new ArrayList<>();
 
         for (String brand : getBrands(rows)) {
@@ -27,6 +26,7 @@ public class Aggregator {
 
     private ArrayList<String> getBrands(ArrayList<Row> rows){
         ArrayList<String> brands = new ArrayList<>();
+        
          for (Row row : rows) {
             if(brands.contains(row.brand) == false){
                 brands.add(row.brand);
